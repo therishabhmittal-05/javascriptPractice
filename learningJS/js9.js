@@ -19,5 +19,25 @@ const myObj1 = {
 const myObj2 = {
     class : "ECE"
 }
-const myObj3 = Object.assign({},myObj1,myObj2)
-console.log(myObj3===myObj1)
+// const myObj3 = Object.assign({},myObj1,myObj2)
+// console.log(myObj3===myObj1)
+let myObj3 = {...myObj1,...myObj2}
+// console.log(myObj3.class);
+const userDatabase = [
+    {
+        id: 1,
+        name : 'Rishabh'
+    },
+    {
+        id: 2,
+        name : 'Raman'
+    },
+    {
+        id: 3,
+        name : 'Ritesh'
+    }
+]
+console.log(userDatabase[0].name);
+
+
+
