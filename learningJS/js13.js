@@ -24,16 +24,16 @@
 
 
 const user = {
-    name: "Rishabh",
-    classID: 'ECE',
-    // writeMessage : function (){
-    // console.log(`${this.name}, welcome to ${this.classID}`)
-    // console.log(this)
-    // }
+    name : "Rishabh",
+    class : 'ECE',
+    writeMessage : function (){
+        console.log(`${this.name}, welcome to ${this.class}`)
+        console.log(this)
+    }
 }
-// user.writeMessage()
+user.writeMessage()
 user.name = 'Sammy'
-// user.writeMessage()
+user.writeMessage()
 
-// console.log(this)
+console.log(this)
 
