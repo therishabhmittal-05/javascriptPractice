@@ -1,1 +1,1 @@
-console.log('Rishabh Mittal')
+console.log('Rishabh Mittal');
