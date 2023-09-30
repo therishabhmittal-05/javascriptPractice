@@ -18,12 +18,12 @@
 // BREAK AND CONTINUE
 
 
-for (let i = 0; i < 10; i++) {
+// for (let i = 0; i < 10; i++) {
     
-    if (i==2){
+//     if (i==2){
      
-    }
-    console.log('value of i is '+ i)
-    break
+//     }
+//     console.log('value of i is '+ i)
+//     break
     
-}
+// }
