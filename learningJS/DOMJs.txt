@@ -1,0 +1,30 @@
+DOCUMENT OBJECT MODEL
+Window->document->HTML-> head and body
+
+@to get any html code of a website it will be helpful
+@document.getElementByID("_idName").innerHTML// to change what's inside this html tag with the _idName
+@to target element(to manipulate or to edit) write document.(various options to get a element)
+@getElementByID.className,id,tagName.....etc
+@getElementByID.set and getAttribute will overwrite the attribute (its a common mistake dev does)
+@ we can store this domselector result in other variable also and inner workings of it can be done using dot operator as variable is a object.
+@getElementByID("_idName").innerHTML,.textContent,.innerText gives you the text content inside that id.
+ diff b/w textContent and innerText is that textContent o/p all teh content whether hidden or not by innerText gives only visible content, innerHTML will give the complete html inside the id whether other tags, content etc
+
+@ HTML collection and nodeList
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@@@ DOM SELECTORS-----
+1. getElementByID
+2. 
