@@ -9,10 +9,40 @@
         color: #ffffff}
         
     </style>
+    <script>
+        document.querySelector("h1").innerText++;
+    </script>
 </head>
 <body>
     <h1 class="heading" id="title">
-        <p>Rishabh Mittal</p>
+        Rishabh Mittal
+        
     </h1>
+    <h2>Sushant</h2>
+    <h2>Priyanka</h2>
+    <h2>Mehak</h2>
+
+    <ul class="list">
+        <li>Jarvis</li>
+        <li>Music</li>
+        <li>Dance</li>
+        <li>Craft</li>
+    </ul>
+    <div class="parent">
+        <div>Rishabh</div>
+        <div>Rahul</div>
+        <div>Rishi</div>
+    </div>
 </body>
+<script>
+   const myList =  document.querySelector(".list")
+   const parent =  document.querySelector(".parent")
+    // console.log(myList.children[0].innerHTML);
+    // console.log(parent.children);
+// for (let i = 0; i < parent.children.length; i++) {
+//         console.log(parent.children[i].innerHTML)
+//     }
+console.log(parent.firstElementChild);
+console.log(parent.lastElementChild);
+</script>
 </html>

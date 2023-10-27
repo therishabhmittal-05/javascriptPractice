@@ -1,6 +1,6 @@
 DOCUMENT OBJECT MODEL
 Window->document->HTML-> head and body
-
+@ write document in console and get the complete structure of the body.
 @to get any html code of a website it will be helpful
 @document.getElementByID("_idName").innerHTML// to change what's inside this html tag with the _idName
 @to target element(to manipulate or to edit) write document.(various options to get a element)
@@ -10,8 +10,10 @@ Window->document->HTML-> head and body
 @getElementByID("_idName").innerHTML,.textContent,.innerText gives you the text content inside that id.
  diff b/w textContent and innerText is that textContent o/p all teh content whether hidden or not by innerText gives only visible content, innerHTML will give the complete html inside the id whether other tags, content etc
 
-@ HTML collection and nodeList
-
+@ HTML collection and nodeList are not proper array, although they seems to be. there are ways to convert nodeList and HTMLCollection into arrays.  HTMLCollection does not have forEach loop while nodeList has.. (both does not have Maps as they are not arrays)----->> to convert to array=>> use Array.from(nodeList or HTMLCollection)
+@ but simple for loop will work on both
+@ CSS selectors
+@querySelector("").style helps to moderate the css property
 
 
 
@@ -26,5 +28,6 @@ Window->document->HTML-> head and body
 
 
 @@@ DOM SELECTORS-----
-1. getElementByID
-2. 
+1. getElementByID("")
+2. querySelector("")--> all CSS selectors will work(class, Id, Tag, Input[type="xyz"])
+3. querySelectorAll("")---> difference is what datatype both returns (querySelectorAll returns- nodeList(behaves like array bnut not completely array))
