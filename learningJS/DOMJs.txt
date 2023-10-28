@@ -1,6 +1,6 @@
 DOCUMENT OBJECT MODEL
 Window->document->HTML-> head and body
-@ write document in console and get the complete structure of the body.
+@ write document in console and get the complete structure of the HTML code.
 @to get any html code of a website it will be helpful
 @document.getElementByID("_idName").innerHTML// to change what's inside this html tag with the _idName
 @to target element(to manipulate or to edit) write document.(various options to get a element)
@@ -14,6 +14,35 @@ Window->document->HTML-> head and body
 @ but simple for loop will work on both
 @ CSS selectors
 @querySelector("").style helps to moderate the css property
+@for te dsa stuff querySelector is heavy operation as dom is a tree structure traversing it is difficult thing....
+@ from querySelector parent-child relation is important as we will be creating new element for the storage of text that comes from database in new html element.
+@Math.round(Math.random()*10+1)---->> generates random  no between 1 to 9 (helpful in case of game)
+
+@document.createElement creates the element in memory and you can set its property like class, id, style (.className, .id, , .style, 
+.setAttribute)
+.setAttribute is used to set other attributes like 
+
+@ to add this new element on web page we have to append it using document.appendChild("_elementVarName")
+@ newElementVarName.innerText="xyz"---> adds text to element 
+@ but there is other way of doing it 1. createTextNode--->document.createTextNode("xyz") 2. newElementVarName.appendChild(_createTextNodeVarName)====>> just this is more efficient way for dsa (round trip is saved)
+                                                
+@ this how you append new element 
+function addNewLang(newLang){
+
+            let newText = document.createElement("li")
+            newText.appendChild(document.createTextNode(newLang))
+            document.querySelector(".language").appendChild(newText)
+            
+        }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -30,4 +59,7 @@ Window->document->HTML-> head and body
 @@@ DOM SELECTORS-----
 1. getElementByID("")
 2. querySelector("")--> all CSS selectors will work(class, Id, Tag, Input[type="xyz"])
-3. querySelectorAll("")---> difference is what datatype both returns (querySelectorAll returns- nodeList(behaves like array bnut not completely array))
+3. querySelectorAll("")---> difference is what datatype both returns (querySelectorAll returns- nodeList(behaves like array but not completely array))
+4. document.createElement("_tagName")(we can create any tag with this advantage of this if some value comes from the database so we can show it on our webpage, also we can apply any operation over this)
+5. _newElementName.replaceWith(_elementToReplaceWith), _newElementName.outerHTML = "<tagName>xyz</tagName>"
+6. _elementToRemoveWith.remove()

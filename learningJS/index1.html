@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body style="background-color: #212121;color:#fff">
+    <ul class = "language">
+        <li>Hindi</li>
+    </ul>
+</body>
+    <script>
+        function addLanguage (langName){
+           let myList =  document.createElement('li')
+           myList.innerHTML = `${langName}`
+           document.querySelector('.language').appendChild(myList)
+        }
+
+        addLanguage("English")
+
+
+        function addNewLang(newLang){
+
+            let newText = document.createElement("li")
+            newText.appendChild(document.createTextNode(newLang))
+            document.querySelector(".language").appendChild(newText)
+            
+        }
+        addNewLang("french")
+
+   const myLi =  document.createElement("li")
+   myLi.innerText = "English"
+   document.querySelector(".language").appendChild(myLi)
+//    Edit 
+  const edit = document.querySelector("li:nth-child(2)")
+// console.log(edit);
+    const newE = document.createElement("li")
+    newE.appendChild(document.createTextNode("Mojo"))
+    document.querySelector(".language").appendChild(newE)
+    edit.replaceWith(newE)
+    // document.querySelector(".language").appendChild(newE)
+
+    </script>
+</html>
