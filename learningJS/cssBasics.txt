@@ -1,0 +1,2 @@
+1. rem for font sizes---> relates font size to the root of the page(browser page settings, viewport).
+2. ch is used for setting characters per line(by setting the width property)
