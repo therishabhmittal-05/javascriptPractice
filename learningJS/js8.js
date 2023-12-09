@@ -22,6 +22,8 @@ let myArr3 = ['practicing  concat and ... method']
 // console.log(myArr.flat(1))
 // console.log(myArr.flat(Infinity))
 myArr.push(myArr,myArr)
+myArr.shift();
+myArr.unshift(myArr,myArr)
 // console.log(myArr)
 let of = Array.from('myArr')
 console.log(of)
