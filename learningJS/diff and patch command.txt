@@ -1,0 +1,2 @@
+diff and patch command
+diff finds the differences between two files and patch applies these changes to the original file
