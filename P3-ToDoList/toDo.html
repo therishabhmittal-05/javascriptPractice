@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoTaskApp</title>
+    <link rel="stylesheet" href="toDo.css">
+</head>
+<body class="font-sans box-border bg-gradient-to-br from-red-600 to-amber-400">
+    <div class= "p-[10px] w-full min-h-screen ">
+        <div class="bg-white w-full max-w-[540px] mx-auto mt-[100px] mb-5 px-8 py-10 rounded-xl">
+            <div>
+                <h2 class="flex items-center mb-3 text-xl font-bold text-blue-950 tracking-widest">To-Do-List <img src="images/icons8-notepad++-64.png" class="w-12 ml-3" ></h2>
+            </div>
+            <div class="flex items-center justify-between bg-gray-200 rounded-3xl pl-5 mb-[25px]">
+                <input type="text" placeholder="Add your task" id="input-box" class="flex-1 bg-transparent p-2 outline-none placeholder:text-slate-500 placeholder:tracking-wider">
+                <button class="py-4 px-12 bg-gradient-to-r from-blue-800 to-purple-800  text-white text-base rounded-3xl hover:font-bold  cursor-pointer" >Add</button>
+            </div>
+            <div>
+                <ul id="list-container" class="text-base cursor-pointer">
+                    <li class="pt-3 pb-2 pl-3 pr-12 flex items-center"><img src="./images/unchecked.png" class="h-7 w-7 mr-4">Rishabh</li>
+                    <!-- do it with checkbox tag -->
+                    <div class="flex items-center">
+                        <input type="checkbox" id="checkbox" class="form-checkbox h-5 w-5 text-indigo-600"/>
+                        <label for="checkbox" class="ml-2 text-gray-700">Checkbox Label</label>
+                    </div>
+                    
+                    
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
