@@ -1,0 +1,5 @@
+Reading for JS 
+fs.readFile("fileName","encoding",fucntion(error,data){
+    //do anythin with data now you are in function.
+    typeof(data)
+})
